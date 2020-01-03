@@ -1,0 +1,6 @@
+C:\Users\NegronMontOA\source\repos\onegronm\DesignPatterns\StrategyCharacterDemo\bin\Debug\StrategyCharacterDemo.exe.config
+C:\Users\NegronMontOA\source\repos\onegronm\DesignPatterns\StrategyCharacterDemo\bin\Debug\StrategyCharacterDemo.exe
+C:\Users\NegronMontOA\source\repos\onegronm\DesignPatterns\StrategyCharacterDemo\bin\Debug\StrategyCharacterDemo.pdb
+C:\Users\NegronMontOA\source\repos\onegronm\DesignPatterns\StrategyCharacterDemo\obj\Debug\StrategyCharacterDemo.csprojAssemblyReference.cache
+C:\Users\NegronMontOA\source\repos\onegronm\DesignPatterns\StrategyCharacterDemo\obj\Debug\StrategyCharacterDemo.exe
+C:\Users\NegronMontOA\source\repos\onegronm\DesignPatterns\StrategyCharacterDemo\obj\Debug\StrategyCharacterDemo.pdb
