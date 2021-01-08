@@ -1,1 +1,4 @@
-# DesignPatterns
+# Design Patterns
+
+- Strategy
+- Observer
