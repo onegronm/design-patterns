@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyDuckDemo", "DesignPatterns\StrategyDuckDemo.csproj", "{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyCharacterDemo", "StrategyCharacterDemo\StrategyCharacterDemo.csproj", "{427028F6-A83A-4C46-BCB6-7B0D70669166}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverWeatherStationDemo", "ObserverWeatherStationDemo\ObserverWeatherStationDemo.csproj", "{A29F575D-D8D8-4B17-9CBC-DF81852B427D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverWeatherStationDemo", "ObserverWeatherStationDemo\ObserverWeatherStationDemo.csproj", "{A29F575D-D8D8-4B17-9CBC-DF81852B427D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyDuckDemo", "StrategyDuckDemo\StrategyDuckDemo.csproj", "{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyBankAppDemo", "StrategyBankApp\StrategyBankAppDemo.csproj", "{683AA30D-367C-4432-9F58-BA13477CF8CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}.Release|Any CPU.Build.0 = Release|Any CPU
 		{427028F6-A83A-4C46-BCB6-7B0D70669166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{427028F6-A83A-4C46-BCB6-7B0D70669166}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{427028F6-A83A-4C46-BCB6-7B0D70669166}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +25,14 @@ Global
 		{A29F575D-D8D8-4B17-9CBC-DF81852B427D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A29F575D-D8D8-4B17-9CBC-DF81852B427D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A29F575D-D8D8-4B17-9CBC-DF81852B427D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683AA30D-367C-4432-9F58-BA13477CF8CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683AA30D-367C-4432-9F58-BA13477CF8CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683AA30D-367C-4432-9F58-BA13477CF8CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683AA30D-367C-4432-9F58-BA13477CF8CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
