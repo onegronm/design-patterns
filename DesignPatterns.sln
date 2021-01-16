@@ -7,11 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyCharacterDemo", "St
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverWeatherStationDemo", "ObserverWeatherStationDemo\ObserverWeatherStationDemo.csproj", "{A29F575D-D8D8-4B17-9CBC-DF81852B427D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverBaggageClaimDemo", "ObserverBaggageClaimDemo\ObserverBaggageClaimDemo.csproj", "{844D6CBE-2210-421B-A5FA-5640EB3520A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverBaggageClaimDemo", "ObserverBaggageClaimDemo\ObserverBaggageClaimDemo.csproj", "{844D6CBE-2210-421B-A5FA-5640EB3520A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyDuckDemo", "StrategyDuckDemo\StrategyDuckDemo.csproj", "{3CF2DB49-4CE7-4EDF-AD6D-B4FC44EAE321}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyBankAppDemo", "StrategyBankApp\StrategyBankAppDemo.csproj", "{683AA30D-367C-4432-9F58-BA13477CF8CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorBeverageDemo", "DecoratorBeverageDemo\DecoratorBeverageDemo.csproj", "{AD85B2B8-09BC-4ABF-A931-A0F137B023B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{683AA30D-367C-4432-9F58-BA13477CF8CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{683AA30D-367C-4432-9F58-BA13477CF8CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{683AA30D-367C-4432-9F58-BA13477CF8CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD85B2B8-09BC-4ABF-A931-A0F137B023B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD85B2B8-09BC-4ABF-A931-A0F137B023B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD85B2B8-09BC-4ABF-A931-A0F137B023B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD85B2B8-09BC-4ABF-A931-A0F137B023B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
