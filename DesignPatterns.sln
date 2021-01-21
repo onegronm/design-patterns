@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyBankAppDemo", "Stra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorBeverageDemo", "DecoratorBeverageDemo\DecoratorBeverageDemo.csproj", "{AD85B2B8-09BC-4ABF-A931-A0F137B023B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPizzaStoreDemo", "FactoryPizzaStoreDemo\FactoryPizzaStoreDemo.csproj", "{461DC946-875C-4BB0-B001-2093DFEB06D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{AD85B2B8-09BC-4ABF-A931-A0F137B023B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD85B2B8-09BC-4ABF-A931-A0F137B023B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD85B2B8-09BC-4ABF-A931-A0F137B023B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{461DC946-875C-4BB0-B001-2093DFEB06D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461DC946-875C-4BB0-B001-2093DFEB06D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461DC946-875C-4BB0-B001-2093DFEB06D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461DC946-875C-4BB0-B001-2093DFEB06D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
