@@ -4,4 +4,4 @@
 - Observer
 - Decorator
 - Simple Factory
-- Static Factory
+- Factory Method
