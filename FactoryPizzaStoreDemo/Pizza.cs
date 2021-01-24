@@ -8,24 +8,37 @@ namespace FactoryPizzaStoreDemo
 {
     public abstract class Pizza : IPizza
     {
-        public void bake()
+        public string name { get; set; }
+        public string dough { get; set; }
+        public string sauce { get; set; }
+
+        public List<string> toppings = new List<string>();
+
+        public virtual void bake()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Bake for 25 minutes at 350");
         }
 
-        public void box()
+        public virtual void box()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Place pizza in official PizzaStore box");
         }
 
-        public void cut()
+        public virtual void cut()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Cutting the pizza into diagonal slices.");
         }
 
-        public void prepare()
+        public virtual void prepare()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Preparing " + name);
+            Console.WriteLine("Tossing dough...");
+            Console.WriteLine("Adding sauce...");
+            Console.WriteLine("Adding toppings:");
+            foreach (var topping in toppings)
+            {
+                Console.WriteLine(" " + topping);
+            }
         }
     }
 }

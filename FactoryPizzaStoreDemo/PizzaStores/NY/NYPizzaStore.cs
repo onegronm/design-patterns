@@ -10,8 +10,9 @@ namespace FactoryPizzaStoreDemo.PizzaStores
     {
         /// <summary>
         /// This subclass handles object instantiation for us in the createPizza() method
+        /// Encapsulates all the knowledge about how to make NY style pizzas
         /// </summary>
-        public override IPizza createPizza(string type)
+        public override Pizza createPizza(string type)
         {
             if (type == "cheese")
                 return new NYStyleCheesePizza();

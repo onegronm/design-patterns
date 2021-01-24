@@ -1,6 +1,6 @@
 ﻿namespace FactoryPizzaStoreDemo
 {
-    internal class PepperoniPizza : IPizza
+    internal class PepperoniPizza : Pizza
     {
     }
 }

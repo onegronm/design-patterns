@@ -8,9 +8,11 @@ namespace FactoryPizzaStoreDemo
 {
     /// <summary>
     /// Factory method:
-    /// handles object creating and encapsulates it in a subclass. This decouples the client code in the superclass from the object creation code in the subclass.
+    /// defines an interface for creating an object, but lets subclasses decide which class to instantiate
+    /// Factory Method lets a class defer instantiation to subclasses
+    /// This decouples the client code in the superclass from the object creation code in the subclass
     /// </summary>
-    public abstract class PizzaStore
+    public abstract class PizzaStore // the abstract creator
     {
         SimplePizzaFactory factory;
 
@@ -24,9 +26,9 @@ namespace FactoryPizzaStoreDemo
 
         }
 
-        public IPizza orderPizza(string type)
+        public Pizza orderPizza(string type)
         {
-            IPizza pizza;
+            Pizza pizza;
 
             pizza = createPizza(type); // createPizza() is a method in the PizzaStore
 
@@ -45,6 +47,6 @@ namespace FactoryPizzaStoreDemo
         /// </summary>
         /// <param name="type"></param>
         /// <returns></returns>
-        public abstract IPizza createPizza(string type);
+        public abstract Pizza createPizza(string type);
     }
 }
