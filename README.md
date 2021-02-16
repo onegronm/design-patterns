@@ -5,4 +5,5 @@
 - Decorator
 - Simple Factory
 - Factory Method
+- Abstract Factory
 - Command Pattern

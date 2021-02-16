@@ -43,26 +43,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheesePizza.cs" />
-    <Compile Include="ClamPizza.cs" />
-    <Compile Include="IPizza.cs" />
-    <Compile Include="PepperoniPizza.cs" />
-    <Compile Include="Pizza.cs" />
-    <Compile Include="PizzaStores\Chicago\ChicagoPizzaStore.cs" />
-    <Compile Include="PizzaStores\Chicago\ChicagoStyleCheesePizza.cs" />
-    <Compile Include="PizzaStores\NY\NYPizzaStore.cs" />
-    <Compile Include="PizzaStores\NY\NYStyleCheesePizza.cs" />
-    <Compile Include="PizzaStores\NY\NYStyleClamPizza.cs" />
-    <Compile Include="PizzaStores\NY\NYStylePepperoniPizza.cs" />
-    <Compile Include="PizzaStores\NY\NYStyleVeggiePizza.cs" />
+    <Compile Include="Ingredients\Clams\FreshClams.cs" />
+    <Compile Include="Ingredients\Factories\ChicagoPizzaIngredientFactory.cs" />
+    <Compile Include="Ingredients\Veggies\Garlic.cs" />
+    <Compile Include="Ingredients\Sauce\MarinaraSauce.cs" />
+    <Compile Include="Ingredients\Veggies\Mushroom.cs" />
+    <Compile Include="Ingredients\Factories\NYPizzaIngredientFactory.cs" />
+    <Compile Include="Ingredients\Dough\ThinCrustDough.cs" />
+    <Compile Include="Ingredients\Cheese\ReggianoCheese.cs" />
+    <Compile Include="Ingredients\Veggies\Onion.cs" />
+    <Compile Include="Ingredients\Veggies\RedPepper.cs" />
+    <Compile Include="Ingredients\Pepperoni\SlicedPepperoni.cs" />
+    <Compile Include="Ingredients\ICheese.cs" />
+    <Compile Include="Ingredients\IClams.cs" />
+    <Compile Include="Ingredients\IDough.cs" />
+    <Compile Include="Ingredients\IPepperoni.cs" />
+    <Compile Include="Ingredients\ISauce.cs" />
+    <Compile Include="Ingredients\IVeggies.cs" />
+    <Compile Include="Ingredients\PizzaIngredientFactory.cs" />
+    <Compile Include="Pizzas\CheesePizza.cs" />
+    <Compile Include="Pizzas\ClamPizza.cs" />
+    <Compile Include="Pizzas\IPizza.cs" />
+    <Compile Include="Pizzas\PepperoniPizza.cs" />
+    <Compile Include="Pizzas\Pizza.cs" />
+    <Compile Include="PizzaStores\ChicagoPizzaStore.cs" />
+    <Compile Include="PizzaStores\NYPizzaStore.cs" />
     <Compile Include="PizzaStores\PizzaStore.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimplePizzaFactory.cs" />
-    <Compile Include="VeggiePizza.cs" />
+    <Compile Include="Pizzas\SimplePizzaFactory.cs" />
+    <Compile Include="Pizzas\VeggiePizza.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbstractFactoryPizzaStoreDemo.Ingredients;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,14 @@ namespace FactoryPizzaStoreDemo
 {
     public abstract class Pizza : IPizza
     {
-        public string name { get; set; }
-        public string dough { get; set; }
-        public string sauce { get; set; }
+        private string name;
 
-        public List<string> toppings = new List<string>();
+        public IDough dough { get; set; }
+        public ISauce sauce { get; set; }
+        public IVeggies veggies { get; set; }
+        public ICheese cheese { get; set; }
+        public IPepperoni pepperoni { get; set; }
+        public IClams clam { get; set; }
 
         public virtual void bake()
         {
@@ -29,16 +33,16 @@ namespace FactoryPizzaStoreDemo
             Console.WriteLine("Cutting the pizza into diagonal slices.");
         }
 
-        public virtual void prepare()
+        public void setName(String name)
         {
-            Console.WriteLine("Preparing " + name);
-            Console.WriteLine("Tossing dough...");
-            Console.WriteLine("Adding sauce...");
-            Console.WriteLine("Adding toppings:");
-            foreach (var topping in toppings)
-            {
-                Console.WriteLine(" " + topping);
-            }
+            this.name = name;
         }
+
+        public String getName()
+        {
+            return this.name;
+        }
+
+        public abstract void prepare();
     }
 }
