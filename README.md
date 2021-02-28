@@ -1,9 +1,15 @@
 # Design Patterns
 
-- Strategy
-- Observer
-- Decorator
+Creational
 - Simple Factory
 - Factory Method
 - Abstract Factory
-- Command Pattern
+
+Structural
+- Decorator
+- Composite
+
+Behavioral
+- Strategy
+- Observer
+- Command
