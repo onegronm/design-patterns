@@ -20,6 +20,7 @@
     - Bloated interfaces for composites and leaves. Leaf inherits methods it doesn't need.
 - ### Bridge
   - Decouple an abstraction from its implementation so that the two can vary independently. This means to create a bridge interface to separate out responsibilities into different abstract classes.
+  - Encapsulate variability behind a stable API that creates separate class hierarchies for an abstraction and its implementations. Client calls to the abstraction are forwarded to the corresponding implementor subclass.
   - #### Benefits
 	- Decouples an implementation so that it is not bound permanently to an interface.
 	- Abstraction and implementation can be extended independently.
@@ -28,7 +29,6 @@
 	- Useful any time you need to vary an interface and an implementation in different ways.
 	- Useful in graphics and windowing systems that need to run over multiple platforms.
 	- When there's a need to change implementor hierarchies at design-time or runtime without breaking client code.
-	- Encapsulate variability behind a stable API that creates separate class hierarchies for an abstraction and its implementations. Client calls to the abstraction are forwarded to the corresponding implementor subclass.
 	- Increases complexity.
 	
 ## Behavioral
