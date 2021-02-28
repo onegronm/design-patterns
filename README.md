@@ -21,12 +21,16 @@
 - ### Bridge
   - Decouple an abstraction from its implementation so that the two can vary independently. This means to create a bridge interface to separate out responsibilities into different abstract classes.
   - #### Benefits
-    - Minimize coupling between client code, abstractions, and implementations.
+	- Decouples an implementation so that it is not bound permanently to an interface.
+	- Abstraction and implementation can be extended independently.
+	- Changes to concrete abstraction classes don't affect the client.
   - #### Uses and drawbacks 
-	- When the abstraction and extensible implementation can vary independently.
+	- Useful any time you need to vary an interface and an implementation in different ways.
+	- Useful in graphics and windowing systems that need to run over multiple platforms.
 	- When there's a need to change implementor hierarchies at design-time or runtime without breaking client code.
 	- Encapsulate variability behind a stable API that creates separate class hierarchies for an abstraction and its implementations. Client calls to the abstraction are forwarded to the corresponding implementor subclass.
-
+	- Increases complexity.
+	
 ## Behavioral
 - Strategy
 - Observer
