@@ -4,6 +4,19 @@
 - Simple Factory
 - Factory Method
 - Abstract Factory
+- ### Builder
+  - Encapsulate the construction of a product and allow it to be constructed in steps. Separates construction of a complex object from its representation.
+  - #### Benefits
+    - Isolates the code from construction and representation.
+    - Fine control over construction process. Allows objects to be constructed in a multistep and varying process (as opposed to one-step factories).
+    - Hides internal representation of the product from the client.
+    - Product implementations can be swapped in and out because the client only sees an abstract interface.
+  - ### Uses and drawbacks
+    - When you need to follow a sequence of potentially complex steps to create an object.
+    - Allow different implementations and internal interfaces of an object.
+    - Goes nicely with interpreter pattern (compound).
+    - May involve a lot of classes and class interdependencies.
+    - Constructing objects requires more domain knowledge of the client than when using a Factory.
 
 ## Structural
 - Decorator
