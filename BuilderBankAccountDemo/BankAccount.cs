@@ -6,13 +6,17 @@ namespace BuilderBankAccountDemo
 {
     public class BankAccount
     {
-        private long accountNumber;
-        private string owner;
-        private decimal balance;
+        public long accountNumber;
+        public string owner;
+        public decimal balance;
 
         // new requirements
-        private string branch;
-        private double interestRate;
+        public string branch;
+        public double interestRate;
+
+        public BankAccount()
+        {
+        }
 
         public BankAccount(long accountNumber, string owner, decimal balance)
         {

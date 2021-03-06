@@ -45,6 +45,7 @@ namespace BuilderBankAccountDemo
         {
             //Here we create the actual bank account object, which is always in a fully initialised state when it's returned.
             BankAccount account = new BankAccount();  //Since the builder is in the BankAccount class, we can invoke its private constructor.
+            
             account.accountNumber = this.accountNumber;
             account.owner = this.owner;
             account.branch = this.branch;
