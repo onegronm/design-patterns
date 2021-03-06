@@ -11,7 +11,7 @@
     - Fine control over construction process. Allows objects to be constructed in a multistep and varying process (as opposed to one-step factories).
     - Hides internal representation of the product from the client.
     - Product implementations can be swapped in and out because the client only sees an abstract interface.
-  - ### Uses and drawbacks
+  - #### Uses and drawbacks
     - When you need to follow a sequence of potentially complex steps to create an object.
     - Allow different implementations and internal interfaces of an object.
     - Goes nicely with interpreter pattern (compound).
