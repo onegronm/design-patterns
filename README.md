@@ -35,16 +35,35 @@
   - Decouple an abstraction from its implementation so that the two can vary independently. This means to create a bridge interface to separate out responsibilities into different abstract classes.
   - Encapsulate variability behind a stable API that creates separate class hierarchies for an abstraction and its implementations. Client calls to the abstraction are forwarded to the corresponding implementor subclass.
   - #### Benefits
-	- Decouples an implementation so that it is not bound permanently to an interface.
-	- Abstraction and implementation can be extended independently.
-	- Changes to concrete abstraction classes don't affect the client.
+    - Decouples an implementation so that it is not bound permanently to an interface.
+    - Abstraction and implementation can be extended independently.
+    - Changes to concrete abstraction classes don't affect the client.
   - #### Uses and drawbacks 
-	- Useful any time you need to vary an interface and an implementation in different ways.
-	- Useful in graphics and windowing systems that need to run over multiple platforms.
-	- When there's a need to change implementor hierarchies at design-time or runtime without breaking client code.
-	- Increases complexity.
+    - Useful any time you need to vary an interface and an implementation in different ways.
+    - Useful in graphics and windowing systems that need to run over multiple platforms.
+    - When there's a need to change implementor hierarchies at design-time or runtime without breaking client code. 
+    - Increases complexity.
 	
 ## Behavioral
 - Strategy
 - Observer
-- Command
+- ### Command
+  - Encapsulate the request for a service as an object, thereby letting you parameterize other objects with different requests, queue or logs requests, and support undoable operations.
+  - Define objectified actions that enables users to perform command requests consistently and extensibly.
+  - Provides a common API for user-request commands.
+  - #### Benefits
+    - Decouples an object making a request from the one that knows how to perform it.
+    - Abstracts the executor of a service making the program more modular and flexible.
+    - Can bundle state and behavior in one object or forward behavior to other objects.
+    - Can extend behavior via subclassing.
+    - Can pass a command object as a parameter.
+    - Composition yields macro commands.
+    - Supports arbitrary level undo-redo.
+  - #### Uses and drawbacks
+    - Implement logging, undo(), and transactional systems.
+    - Drawing editors, Microsoft Office tools, GNU Emacs.
+    - Might result in lots of trivial command subclasses.
+    - Excessive memory may be needed to support undo/redo operations.
+    - Avoiding error accumulation during undo/redo in numerical analysis applications.
+
+
