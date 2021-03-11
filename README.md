@@ -2,7 +2,18 @@
 
 ## Creational
 - Simple Factory
-- Factory Method
+- ### Factory Method
+  - Defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+  - Enable the extensible creation of variabilities such as commands, iterators, and visitors.
+  - #### Benefits
+    - Decouples the implementation of the product from its use.
+    - Clients are more flexible since they don't need to specify the class name of the concrete class and the details of its creation.
+    - Adding new variants does not affect existing client code.
+  - #### Uses and drawbacks
+    - When the class cannot anticipate the objects it must create.
+    - When the class wants its subclasses to specify the objects it creates.
+    - When there's a need to decouple object creation from its subsequent use. 
+    - Construction of objects may require additional classes.
 - Abstract Factory
 - ### Builder
   - Encapsulate the construction of a product and allow it to be constructed in steps. Separates construction of a complex object from its representation.
