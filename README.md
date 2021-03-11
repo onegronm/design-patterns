@@ -57,7 +57,7 @@
     - Can bundle state and behavior in one object or forward behavior to other objects.
     - Can extend behavior via subclassing.
     - Can pass a command object as a parameter.
-    - Composition yields macro commands.
+    - Composition yields macro commands. Macro commands are a simple extension of Command that allow multiple commands to be invoked.
     - Supports arbitrary level undo-redo.
   - #### Uses and drawbacks
     - Implement logging, undo(), and transactional systems.
