@@ -3,7 +3,7 @@
 ## Creational
 - Simple Factory
 - ### Factory Method
-  - Defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+  - *Defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.*
   - Enable the extensible creation of variabilities such as commands, iterators, and visitors.
   - #### Benefits
     - Decouples the implementation of the product from its use.
@@ -16,7 +16,7 @@
     - Construction of objects may require additional classes.
 - Abstract Factory
 - ### Builder
-  - Encapsulate the construction of a product and allow it to be constructed in steps. Separates construction of a complex object from its representation.
+  - *Encapsulate the construction of a product and allow it to be constructed in steps. Separates construction of a complex object from its representation.*
   - #### Benefits
     - Isolates the code from construction and representation.
     - Fine control over construction process. Allows objects to be constructed in a multistep and varying process (as opposed to one-step factories).
@@ -32,7 +32,7 @@
 ## Structural
 - Decorator
 - ### Composite
-  - Build structures of objects in the form of *trees* to represent part-whole hierarchies that contain both compositions of objects and individual objects as nodes. Using a composite structure, we can apply the same operations over both composites and individual objects, ignoring the differences between composites and individual objects.
+  - *Build structures of objects in the form of trees to represent part-whole hierarchies that contain both compositions of objects and individual objects as nodes. Using a composite structure, we can apply the same operations over both composites and individual objects, ignoring the differences between composites and individual objects.*
   - #### Benefits
     - Treat individual objects and multiple, recursively-composed objects uniformly regardless of complexity and behavior.
     - No distinction between individual and composed elements. 
@@ -43,7 +43,7 @@
     - Perceived complexity. May need what seems a large number of classes and objects.
     - Bloated interfaces for composites and leaves. Leaf inherits methods it doesn't need.
 - ### Bridge
-  - Decouple an abstraction from its implementation so that the two can vary independently. This means to create a bridge interface to separate out responsibilities into different abstract classes.
+  - *Decouple an abstraction from its implementation so that the two can vary independently. This means to create a bridge interface to separate out responsibilities into different abstract classes.*
   - Encapsulate variability behind a stable API that creates separate class hierarchies for an abstraction and its implementations. Client calls to the abstraction are forwarded to the corresponding implementor subclass.
   - #### Benefits
     - Decouples an implementation so that it is not bound permanently to an interface.
@@ -59,7 +59,7 @@
 - Strategy
 - Observer
 - ### Command
-  - Encapsulate the request for a service as an object, thereby letting you parameterize other objects with different requests, queue or logs requests, and support undoable operations.
+  - *Encapsulate the request for a service as an object, thereby letting you parameterize other objects with different requests, queue or logs requests, and support undoable operations.*
   - Define objectified actions that enables users to perform command requests consistently and extensibly.
   - Provides a common API for user-request commands.
   - #### Benefits
