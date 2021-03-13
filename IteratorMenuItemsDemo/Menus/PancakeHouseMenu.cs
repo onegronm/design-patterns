@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace IteratorMenuItemsDemo.Menus
 {
-    public class PancakeHouseMenu
+    public class PancakeHouseMenu : IMenu
     {
         List<MenuItem> menuItems;
 
@@ -22,6 +23,11 @@ namespace IteratorMenuItemsDemo.Menus
         {
             MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
             menuItems.Add(menuItem);
+        }
+
+        public IEnumerable createIterator()
+        {
+            return menuItems;
         }
     }
 }

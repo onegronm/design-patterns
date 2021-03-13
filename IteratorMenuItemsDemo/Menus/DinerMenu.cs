@@ -1,10 +1,12 @@
-﻿using System;
+﻿using IteratorMenuItemsDemo.Iterators;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace IteratorMenuItemsDemo.Menus
 {
-    public class DinerMenu
+    public class DinerMenu : IMenu
     {
         static readonly int MAX_ITEMS = 6;
         int numberOfItems = 0;
@@ -32,6 +34,11 @@ namespace IteratorMenuItemsDemo.Menus
                 menuItems[numberOfItems] = menuItem;
                 numberOfItems++;
             }
+        }
+
+        public IEnumerable createIterator()
+        {
+            return new DinerMenuIterator(menuItems);
         }
     }
 }

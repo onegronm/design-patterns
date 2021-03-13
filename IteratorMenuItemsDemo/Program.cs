@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IteratorMenuItemsDemo.Menus;
+using System;
+using System.Collections.Generic;
 
 namespace IteratorMenuItemsDemo
 {
@@ -6,7 +8,14 @@ namespace IteratorMenuItemsDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<IMenu> menus = new List<IMenu>(){
+                new PancakeHouseMenu(), new DinerMenu()
+            };
+
+            Waitress waitress = new Waitress(menus);
+            waitress.printMenu();
+
+            Console.Read();
         }
     }
 }
