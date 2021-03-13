@@ -56,7 +56,17 @@
     - Increases complexity.
 	
 ## Behavioral
-- Strategy
+- ### Strategy
+  - *Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+  - Change behaviors transparently. Encapsulate variability of behaviors via a common API whose implementations can be changed transparently with respect to clients.
+  - #### Benefits
+    - Decouples the interface of a behavior from its implementation. It creates an abstraction that makes it easy to select and exchange behaviors.
+    - Greater flexibility and reuse.
+    - Behaviors can change dynamically.
+  - #### Uses and drawbacks
+    - When an object should be configurable at runtime with one of many algorithms and all algorithms can be encapsulated and one interface covers all encapsulations.
+    - Overhead of strategy creation and communication. Strategy can increase the number of objects created in a program. 
+    - Semantic incompatibility of multiple strategies used together inconsistently. May require other patterns such as abstract factory so groups of strategies that require semantic coherence evolve in a consistent way (concurrent or distributed systems).
 - Observer
 - ### Command
   - *Encapsulate the request for a service as an object, thereby letting you parameterize other objects with different requests, queue or logs requests, and support undoable operations.*
