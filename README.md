@@ -76,5 +76,16 @@
     - Might result in lots of trivial command subclasses.
     - Excessive memory may be needed to support undo/redo operations.
     - Avoiding error accumulation during undo/redo in numerical analysis applications.
-
+- ### Iterator
+  - *Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation*
+  - It also places the task of traversal on the iterator object, not on the aggregate, which simplifies the aggregate interface and implementation, and places the responsibility where it should be.
+  - #### Benefits
+    - Flexibility. Aggregate and traversal objects are decoupled and can evolve separately.
+    - Multiplicity. Supports multiple iterators and traversal algorithms.
+  - #### Uses and drawbacks
+    - When you require multiple traversal algorithms over an aggregate.
+    - When you require a uniform traversal interface over different aggregates.
+    - When aggregate classes and traversal algorithms must vary independently.
+    - Overhead. Additional communication between iterator and aggregate. Problematic for iterators in concurrent or distributed systems.
+    - Dependencies. The iterator implementation may depend on aggregate's implementation.  
 
