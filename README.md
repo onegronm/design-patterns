@@ -98,4 +98,16 @@
     - When aggregate classes and traversal algorithms must vary independently.
     - Overhead. Additional communication between iterator and aggregate. Problematic for iterators in concurrent or distributed systems.
     - Dependencies. The iterator implementation may depend on aggregate's implementation.  
+- ### State
+  - *Allows an object to alter its behavior when its internal state changes. The object will appear to change its class without changing its API.
+  - Represents a state as a full-blown class. The context gets its behavior by delegating to the current state object it is composed with.
+  - Allows a Context to change its behavior as the state of the Context changes. This is different from Strategy which typically configures Context classes with a behavior or algorithm. Strategy doesn't have clients accessing the methods through context which is used to store data from the "one size fits all" interface the strategy exposes.
+  - #### Benefits
+    - By encapsulating each state into a class, we localize any changes that will need to be made and partition behavior for different states.
+    - State transitions can be controlled by the State classes or by the Context classes.
+  - #### Uses and drawbacks
+    - When an object must change its behavior at runtime depending on which state it is in.
+    - When several operations have the same large multi-part conditional structure that depends on the object's state.
+    - Will typically result in a greater number of classes in your design.
+    - Dependencies and interactions may be hard to understand and evolve if they aren't well documented (& if the State pattern isn't well understood)
 
