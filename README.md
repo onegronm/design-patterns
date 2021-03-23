@@ -64,6 +64,7 @@
     - Behaviors can change dynamically.
   - #### Uses and drawbacks
     - When an object should be configurable at runtime with one of many algorithms and all algorithms can be encapsulated and one interface covers all encapsulations.
+    - Use as an alternative to subclassing.
     - Overhead of strategy creation and communication. Strategy can increase the number of objects created in a program. 
     - Semantic incompatibility of multiple strategies used together inconsistently. May require other patterns such as abstract factory so groups of strategies that require semantic coherence evolve in a consistent way (concurrent or distributed systems).
 - Observer
