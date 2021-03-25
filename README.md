@@ -44,6 +44,7 @@
 - ### Bridge
   - *Decouple an abstraction from its implementation so that the two can vary independently. This means to create a bridge interface to separate out responsibilities into different abstract classes.*
   - Encapsulate variability behind a stable API that creates separate class hierarchies for an abstraction and its implementations. Client calls to the abstraction are forwarded to the corresponding implementor subclass.
+  - The Bridge pattern is an application of the old advice, “prefer composition over inheritance”. 
   - #### Benefits
     - Decouples an implementation so that it is not bound permanently to an interface.
     - Abstraction and implementation can be extended independently.
