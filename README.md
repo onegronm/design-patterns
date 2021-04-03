@@ -127,3 +127,4 @@
     - When you want to handle variations by subclassing.
     - Must subclass to specialize behavior, which can yield many subclasses. Solves same problems as strategy pattern but in a different way. 
 
+
