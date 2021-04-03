@@ -57,7 +57,7 @@
 	
 ## Behavioral
 - ### Strategy
-  - *Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+  - *Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.*
   - Change behaviors transparently. Encapsulate variability of behaviors via a common API whose implementations can be changed transparently with respect to clients.
   - #### Benefits
     - Decouples the interface of a behavior from its implementation. It creates an abstraction that makes it easy to select and exchange behaviors.
@@ -88,7 +88,7 @@
     - Excessive memory may be needed to support undo/redo operations.
     - Avoiding error accumulation during undo/redo in numerical analysis applications.
 - ### Iterator
-  - *Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation*
+  - *Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.*
   - It also places the task of traversal on the iterator object, not on the aggregate, which simplifies the aggregate interface and implementation, and places the responsibility where it should be.
   - #### Benefits
     - Flexibility. Aggregate and traversal objects are decoupled and can evolve separately.
@@ -100,7 +100,7 @@
     - Overhead. Additional communication between iterator and aggregate. Problematic for iterators in concurrent or distributed systems.
     - Dependencies. The iterator implementation may depend on aggregate's implementation.  
 - ### State
-  - *It allows an object to alter its behavior when its internal state changes. The object will appear to change its class without changing its API.
+  - *It allows an object to alter its behavior when its internal state changes. The object will appear to change its class without changing its API.*
   - Represents a state as a full-blown class. The context gets its behavior by delegating to the current state object it is composed with.
   - Allows a Context to change its behavior as the state of the Context changes. This is different from Strategy which typically configures Context classes with a behavior or algorithm. Strategy doesn't have clients accessing the methods through context which is used to store data from the "one size fits all" interface the strategy exposes.
   - #### Benefits
@@ -112,7 +112,7 @@
     - Will typically result in a greater number of classes in your design.
     - Dependencies and interactions may be hard to understand and evolve if they aren't well documented (& if the State pattern isn't well understood)
 - ### Template Method
-  - *Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. The Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+  - *Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. The Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.*
   - Subclasses can "hook into" the algorithm at various points, if they wish through a hook method; a subclass is also free to ignore the hook. Hook methods do nothing or default behavior in the abstract class, but may be overriden in the subclass.
   - The Hollywood Principle guides us to put decision making in high-level modules that can decide how and when to call low-level modules.
   - Similar to strategy as both encapsulate algorithms, one by inheritance and the other by composition.
