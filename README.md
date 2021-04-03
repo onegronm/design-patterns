@@ -100,7 +100,7 @@
     - Overhead. Additional communication between iterator and aggregate. Problematic for iterators in concurrent or distributed systems.
     - Dependencies. The iterator implementation may depend on aggregate's implementation.  
 - ### State
-  - *Allows an object to alter its behavior when its internal state changes. The object will appear to change its class without changing its API.
+  - *It allows an object to alter its behavior when its internal state changes. The object will appear to change its class without changing its API.
   - Represents a state as a full-blown class. The context gets its behavior by delegating to the current state object it is composed with.
   - Allows a Context to change its behavior as the state of the Context changes. This is different from Strategy which typically configures Context classes with a behavior or algorithm. Strategy doesn't have clients accessing the methods through context which is used to store data from the "one size fits all" interface the strategy exposes.
   - #### Benefits
