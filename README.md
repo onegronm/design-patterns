@@ -111,4 +111,19 @@
     - When several operations have the same large multi-part conditional structure that depends on the object's state.
     - Will typically result in a greater number of classes in your design.
     - Dependencies and interactions may be hard to understand and evolve if they aren't well documented (& if the State pattern isn't well understood)
+- ### Template Method
+  - *Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. The Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+  - Subclasses can "hook into" the algorithm at various points, if they wish through a hook method; a subclass is also free to ignore the hook. Hook methods do nothing or default behavior in the abstract class, but may be overriden in the subclass.
+  - The Hollywood Principle guides us to put decision making in high-level modules that can decide how and when to call low-level modules.
+  - Similar to strategy as both encapsulate algorithms, one by inheritance and the other by composition.
+  - The factory method is a specialization of Template method.
+  - ### Benefits
+    - Enables inversion of control (Hollywood Principle).
+    - Overriding rules are enforced via subclassing.
+    - Promotes code reuse.
+  - ### Uses and drawbacks 
+    - When you need to implement invariant aspects of an algorithm once and let subclasses define variant parts. 
+    - When you want to localize common behavior in a class to enhance reuse.
+    - When you want to handle variations by subclassing.
+    - Must subclass to specialize behavior, which can yield many subclasses. Solves same problems as strategy pattern but in a different way. 
 
