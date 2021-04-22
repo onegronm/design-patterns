@@ -68,7 +68,19 @@
     - Use as an alternative to subclassing.
     - Overhead of strategy creation and communication. Strategy can increase the number of objects created in a program. 
     - Semantic incompatibility of multiple strategies used together inconsistently. May require other patterns such as abstract factory so groups of strategies that require semantic coherence evolve in a consistent way (concurrent or distributed systems).
-- Observer
+- ### Observer
+  - *Defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+  - Observables (subjects) update observers using a common interface.
+  - You can push or pull data from the Observable when using the pattern (pull is considered more "correct").
+  - #### Benefits
+    - Observers are loosely coupled in that the Observable knows nothing about them, other than that they implement the observer interface.
+    - It allows sending data to other objects effectively without any change in the Subject or Observer classes.
+    - Observers can be added/removed at any point in time.
+  - #### Uses and drawbacks
+    - When you need to notify a change of state and push data to several observers.
+    - When you need to "listen in" on any types of actions that might occur on a control, like a button press. 
+    - Social media, RSS feeds, email subscription in which you have the option to follow or subscribe and you receive latest notification.
+    - The Observer interface has to be implemented by ConcreteObserver, which involves inheritance. There is no option for composition.
 - ### Command
   - *Encapsulate the request for a service as an object, thereby letting you parameterize other objects with different requests, queue or logs requests, and support undoable operations.*
   - Define objectified actions that enables users to perform command requests consistently and extensibly.
