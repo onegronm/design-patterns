@@ -70,7 +70,7 @@
     - Semantic incompatibility of multiple strategies used together inconsistently. May require other patterns such as abstract factory so groups of strategies that require semantic coherence evolve in a consistent way (concurrent or distributed systems).
 - ### Observer
   - *Defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
-  - Observables (subjects) update observers using a common interface.
+  - Observables (subjects) update observers using a common interface.*
   - You can push or pull data from the Observable when using the pattern (pull is considered more "correct").
   - #### Benefits
     - Observers are loosely coupled in that the Observable knows nothing about them, other than that they implement the observer interface.
