@@ -36,7 +36,18 @@
     - Constructing objects requires more domain knowledge of the client than when using a Factory.
 
 ## Structural
-- Decorator
+- ### Decorator
+  - *Attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.*
+  - Involves a set of decorator classes that are used to wrap concrete components.
+  - Decorators mirror the type of the components they decorate, either through inheritance or interface implementation.- Can insert decorators transparently and the client never has to know it's dealing with a decorator.
+  - Decorators are typically transparent to the client of the component, unless the client is relying on the component's concrete type.
+  - #### Benefits
+    - Allows classes to be easily extended to incorporate new behavior without modifying existing code.
+    - Objects can be decorated at any time, so we can decorate objects dynamically at runtime with as many decorators as we like.
+  - #### Uses and drawbacks
+    - When you need to change the behavior of components by adding new functionality before and/or after (or even in place of) delegating to the object it decorates.
+    - Adds a lot of small classes to a design and this occasionally results in a design that's less than straightforward for others to understand.
+    - Some code is dependent on specific types which can break when introducting a decorator. 
 - ### Composite
   - *Build structures of objects in the form of trees to represent part-whole hierarchies that contain both compositions of objects and individual objects as nodes. Using a composite structure, we can apply the same operations over both composites and individual objects, ignoring the differences between composites and individual objects.*
   - #### Benefits
