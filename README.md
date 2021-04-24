@@ -13,7 +13,14 @@
     - When the class wants its subclasses to specify the objects it creates.
     - When there's a need to decouple object creation from its subsequent use. 
     - Construction of objects may require additional classes.
-- Abstract Factory
+- ### Abstract Factory
+  - *Provides an interface for creating families of related or dependent objects without specifying their concrete classes.*
+  - Methods are often implemented as factory methods. Each method is responsible for creating a concrete product. The subclass of the abstract factory supplies those implementations. 
+  - #### Benefits
+    - Decouople code from the actual factories that produce products meant for different contexts-such as different regions, operating systems, or looks and feels.
+    - Provides a powerful technique for coding to abstractins, not contrete classes.
+  - #### Uses and drawbacks
+    - When you have families of products you need to create and you want to make sure your clients create products that belong together.
 - ### Builder
   - *Encapsulate the construction of a product and allow it to be constructed in steps. Separates construction of a complex object from its representation.*
   - #### Benefits
