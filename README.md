@@ -36,8 +36,8 @@
       - [Benefits](#benefits-10)
       - [Uses and drawbacks](#uses-and-drawbacks-10)
     + [Template Method](#template-method)
-    + [Benefits](#benefits-11)
-    + [Uses and drawbacks](#uses-and-drawbacks-11)
+      - [Benefits](#benefits-11)
+      - [Uses and drawbacks](#uses-and-drawbacks-11)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -190,11 +190,11 @@
   - The Hollywood Principle guides us to put decision making in high-level modules that can decide how and when to call low-level modules.
   - Similar to strategy as both encapsulate algorithms, one by inheritance and the other by composition.
   - The factory method is a specialization of Template method.
-  - ### Benefits
+  - #### Benefits
     - Enables inversion of control (Hollywood Principle).
     - Overriding rules are enforced via subclassing.
     - Promotes code reuse.
-  - ### Uses and drawbacks 
+  - #### Uses and drawbacks 
     - When you need to implement invariant aspects of an algorithm once and let subclasses define variant parts. 
     - When you want to localize common behavior in a class to enhance reuse.
     - When you want to handle variations by subclassing.
