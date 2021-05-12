@@ -9,6 +9,7 @@
     + [Builder](#builder)
       - [Benefits](#benefits-2)
       - [Uses and drawbacks](#uses-and-drawbacks-2)
+    + Singleton
   * [Structural](#structural)
     + [Decorator](#decorator)
       - [Benefits](#benefits-3)
