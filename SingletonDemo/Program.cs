@@ -18,6 +18,18 @@ namespace SingletonDemo
                 Console.WriteLine("Dispatch Request to: " + server);
             }
 
+            LoadBalancerDotNetOptimized b5 = LoadBalancerDotNetOptimized.getInstance();
+            LoadBalancerDotNetOptimized b6 = LoadBalancerDotNetOptimized.getInstance();
+            LoadBalancerDotNetOptimized b7 = LoadBalancerDotNetOptimized.getInstance();
+            LoadBalancerDotNetOptimized b8 = LoadBalancerDotNetOptimized.getInstance();
+
+            LoadBalancerDotNetOptimized _balancer = LoadBalancerDotNetOptimized.getInstance();
+            for (int i = 0; i < 15; i++)
+            {
+                string server = _balancer.Server;
+                Console.WriteLine("Dispatch Request to: " + server);
+            }
+
         }
     }
 }
