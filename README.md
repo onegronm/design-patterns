@@ -78,6 +78,16 @@
     - Goes nicely with interpreter pattern (compound).
     - May involve a lot of classes and class interdependencies.
     - Constructing objects requires more domain knowledge of the client than when using a Factory.
+- ### Singleton
+  - *Ensures a class has only one instance, and provides a global point of access to it.*
+  - Different ways of implementing for thread safety (eager loading, double-checked locking)
+  - Examine your performance and resource constraints and carefully choose an appropriate Singleton implementation for multithreaded applications.
+  - #### Benefits
+    - Provides a global access point to the instance.
+  - #### Uses and drawbacks  
+    - When you need one and only one instance of an object such as thread pools, connections, caches, dialog boxes, objects that handle preferences and registry settings, objects used for logging, and objects that act as device drivers to devices like printers and graphics cards.
+    - When you want to create a single instance lazily.
+    - May not be thread-safe depending on the implementation.
 
 ## Structural
 - ### Decorator
