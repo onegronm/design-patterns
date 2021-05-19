@@ -8,6 +8,7 @@
     + [Decorator](#decorator)
     + [Composite](#composite)
     + [Bridge](#bridge)
+    + [Adapter](#adapter)
   * [Behavioral](#behavioral)
     + [Strategy](#strategy)
     + [Observer](#observer)
@@ -102,6 +103,19 @@
     - Useful in graphics and windowing systems that need to run over multiple platforms.
     - When there's a need to change implementor hierarchies at design-time or runtime without breaking client code. 
     - Increases complexity.
+ - ### Adapter
+   - *Converts the interface of a class into another interface the clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.*
+   - The job of implementing an adapter is proportional to the size of the interface you need to support as your target interface.
+   - Class adapters are different than object adapters. Class adapters subclass the target and adaptee, while with object adapter we use composition to pass requests to an Adaptee. Class adapters require multiple inheritance.
+   - Converts one interface to another one a client expects.
+   - An adapter wraps an object to change its interface.
+   - #### Benefits
+     -  Decouples the client from the implemented interface. If we expect the interface to change over time, the adapter encapsulates that change so the client doesn't have to be modified each time it needs to operate against a different interface.
+     -  Binds the client to an interface, not an implementation.
+     -  Clients can make use of new libraries and subsets without changing any code.
+   - #### Uses and drawbacks
+     - When you need to adapt an interface to one that the client is expecting.
+     - When you need to use an existing class and its interface is not the one you need.
 	
 ## Behavioral
 - ### Strategy
