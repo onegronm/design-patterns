@@ -116,6 +116,20 @@
    - #### Uses and drawbacks
      - When you need to adapt an interface to one that the client is expecting.
      - When you need to use an existing class and its interface is not the one you need.
+- ### Facade
+  - *Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.*
+  - Avoids tight coupling between clients and subsystems.
+  - Subsystem classes still remain available for direct use by clients that need to use more specific interfaces.
+  - Provides a simplified interface while still exposing the full functionality of the system to those who may need it.
+  - Uses delegation to perform the work of the facade.
+  - ### Benefits
+    - Takes a complex subsystem and makes it easier to use. 
+    - Allos updating a subsystem without having to change the client code.
+  - ### Uses and drawbacks
+    - When you want to hide all the complexity of one or more classes behind a clean, well-lit facade.
+    - When you want to decouple your client implementation from any one subsystem.
+    - High degree of dependence at facade interface.
+    - Complex implementation (especially with existing code).
 	
 ## Behavioral
 - ### Strategy
