@@ -9,6 +9,7 @@
     + [Composite](#composite)
     + [Bridge](#bridge)
     + [Adapter](#adapter)
+    + [Facade](#facade)
   * [Behavioral](#behavioral)
     + [Strategy](#strategy)
     + [Observer](#observer)
