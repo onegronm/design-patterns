@@ -10,6 +10,7 @@
     + [Bridge](#bridge)
     + [Adapter](#adapter)
     + [Facade](#facade)
+	+ [Proxy] (#proxy)
   * [Behavioral](#behavioral)
     + [Strategy](#strategy)
     + [Observer](#observer)
