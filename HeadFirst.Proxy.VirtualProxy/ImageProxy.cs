@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
+﻿using System.Drawing;
 using System.Net;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace HeadFirst.Proxy.VirtualProxy
 {
@@ -55,7 +50,6 @@ namespace HeadFirst.Proxy.VirtualProxy
 
         public void RetrieveImage()
         {
-
             // Book image from amazon
             string url = "http://images.amazon.com/images/P/0596007124.01._PE34_SCMZZZZZZZ_.jpg";
 

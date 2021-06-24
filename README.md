@@ -123,15 +123,32 @@
   - Subsystem classes still remain available for direct use by clients that need to use more specific interfaces.
   - Provides a simplified interface while still exposing the full functionality of the system to those who may need it.
   - Uses delegation to perform the work of the facade.
-  - ### Benefits
+  - #### Benefits
     - Takes a complex subsystem and makes it easier to use. 
     - Allos updating a subsystem without having to change the client code.
-  - ### Uses and drawbacks
+  - #### Uses and drawbacks
     - When you want to hide all the complexity of one or more classes behind a clean, well-lit facade.
     - When you want to decouple your client implementation from any one subsystem.
     - High degree of dependence at facade interface.
     - Complex implementation (especially with existing code).
-	
+- ### Proxy
+  - *Provides a surrogate or placeholder for another object to control access to it.*
+  - Similar in structure to Facade, Decorator, and Adapter but different in purpose.
+    - Proxies wrap another object to control access acting as a surrogate of a real subject
+    - Decorators wrap another object and provide a different interface to it.
+	- Facades wrap another object and provide additional behavior to it.
+	- Adapters wrap a bunch of objects to simplify their interface.
+  - #### Benefits
+    - Security.
+	- Avoids duplication of objects which might be huge in size and memory intensive, increasing performance of the application.
+	- Remote proxy ensures security by installing the local code proxy (stub) in the client machine and then accessing the server with help of remote code.
+  - #### Uses and drawbacks
+    - When you need to create a representative object that controls access to another object, which may be remote, expensive to create, or in need of securing.
+  	- When you need to create a wrapper to cover the main object's complexity from the client.
+	- Introduces another layer of abstraction which may be an issue if the real subject code is accessed directly by some clients and some of them might access the proxy classes. This might cause disparate behavior.
+  - #### Types
+    - Virtual proxy: acts as a representative for an object that may be expensive to create. Defers the creation of the object until it is needed; the Virtual Proxy also acts as a surrogate for the object before and while it is being created. After that, the proxy delegates requests directly to the RealSubject.
+  
 ## Behavioral
 - ### Strategy
   - *Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.*
