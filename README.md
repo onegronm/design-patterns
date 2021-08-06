@@ -34,8 +34,12 @@
   - #### Uses and drawbacks
     - When the class cannot anticipate the objects it must create.
     - When the class wants its subclasses to specify the objects it creates.
-    - When there's a need to decouple object creation from its subsequent use. 
+    - When there's a need to decouple object creation from its subsequent use.
+    - When you need to construct multiple instances of the object or if the object needs to be constructed lazily (e.g. the object is expensive to construct, you don't use it in all code paths, and you want to defer construction to the code paths that actually use it).
     - Construction of objects may require additional classes.
+  - #### When NOT to use
+    - When the calling code can create the object upfront and simply supply it (e.g. there is only one instance used and it doesn't need to be created lazily), then you should simply take the object (not its factory) as a parameter. Avoids an unnecessary level of indirection.
+    - Very simple objects that are inexpensive and simple to create (do not need to be lazily created, don't have many constructor parameters) and have only one type (or very few, limited, well-known subtypes) should generally be constructed directly rather than with a factory. For example, creating primitives or other simple objects (2d points, complex numbers, etc.) with a factory is a "code smell".
 - ### Abstract Factory
   - *Provides an interface for creating families of related or dependent objects without specifying their concrete classes.*
   - Methods are often implemented as factory methods. Each method is responsible for creating a concrete product. The subclass of the abstract factory supplies those implementations. 
