@@ -18,6 +18,7 @@
     + [Iterator](#iterator)
     + [State](#state)
     + [Template Method](#template-method)
+    + [Memento](#memento)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -237,5 +238,19 @@
     - When you want to localize common behavior in a class to enhance reuse.
     - When you want to handle variations by subclassing.
     - Must subclass to specialize behavior, which can yield many subclasses. Solves same problems as strategy pattern but in a different way. 
+- ### Memento
+  - *Without violating encapsulation, captures and externalizes an object's internal state so that the object can be restored to this state later.*
+  - Its first goal is to save the important state of a system's key object.
+  - Its second goal is to maintain the key object's encapsulation.
+  - Keep the state separate from the key, or originator object. This seperate object is known as the Memento object.
+  - #### Benefits
+    - Keeping the saved state external from the key object helps to maintain cohesion.
+    - Keeps the key object's data encapsulated.
+    - Provides easy-to-implement recovery capability.
+  - #### Uses and drawbacks
+    - When you need to be able to return an object to one of its previous states; for instance, if your user requests an "undo".
+    - When you need to save state.
+    - Saving and restoring state can be time consuming.
+    - Consider using serialization to save a system's state.
 
 
