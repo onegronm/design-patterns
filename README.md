@@ -239,6 +239,7 @@
     - When you want to handle variations by subclassing.
     - Must subclass to specialize behavior, which can yield many subclasses. Solves same problems as strategy pattern but in a different way. 
 - ### Memento
+  - Popularity: low
   - *Without violating encapsulation, captures and externalizes an object's internal state so that the object can be restored to this state later.*
   - Its first goal is to save the important state of a system's key object.
   - Its second goal is to maintain the key object's encapsulation.
