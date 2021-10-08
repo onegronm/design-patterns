@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadFirst.Proxy.VirtualProx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoFactory.Memento.Character", "DoFactory.Memento.Character\DoFactory.Memento.Character.csproj", "{7FFC047B-2D11-445D-8784-AC5707940122}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringGuru.Flyweight.Forest", "RefactoringGuru.Flyweight.Forest\RefactoringGuru.Flyweight.Forest.csproj", "{3378AD03-3F1C-4112-A5CF-DC3971CC5123}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{7FFC047B-2D11-445D-8784-AC5707940122}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FFC047B-2D11-445D-8784-AC5707940122}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FFC047B-2D11-445D-8784-AC5707940122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3378AD03-3F1C-4112-A5CF-DC3971CC5123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3378AD03-3F1C-4112-A5CF-DC3971CC5123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3378AD03-3F1C-4112-A5CF-DC3971CC5123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3378AD03-3F1C-4112-A5CF-DC3971CC5123}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +166,7 @@ Global
 		{93832769-8316-4D42-B759-DEBCE0F63202} = {2A4754C0-04BE-48CA-BE03-08C47A174180}
 		{A26C699E-81E9-4100-8539-77408117B018} = {2A4754C0-04BE-48CA-BE03-08C47A174180}
 		{7FFC047B-2D11-445D-8784-AC5707940122} = {21583762-8EA1-4134-9F0D-69A65F57A3F7}
+		{3378AD03-3F1C-4112-A5CF-DC3971CC5123} = {2A4754C0-04BE-48CA-BE03-08C47A174180}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {514B5C23-0A18-429A-925C-4ED85BA217AC}
