@@ -11,6 +11,7 @@
     + [Adapter](#adapter)
     + [Facade](#facade)
     + [Proxy](#proxy)
+    + [Flyweight](#flyweight)
   * [Behavioral](#behavioral)
     + [Strategy](#strategy)
     + [Observer](#observer)
@@ -154,7 +155,18 @@
 	- Introduces another layer of abstraction which may be an issue if the real subject code is accessed directly by some clients and some of them might access the proxy classes. This might cause disparate behavior.
   - #### Types
     - Virtual proxy: acts as a representative for an object that may be expensive to create. Defers the creation of the object until it is needed; the Virtual Proxy also acts as a surrogate for the object before and while it is being created. After that, the proxy delegates requests directly to the RealSubject.
-  
+- ### Flyweight
+  - Popularity: low
+  - *Uses sharing to support large number of fine-grained objects efficiently. It lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.*
+  - #### Benefits
+    - Reduces the number of object instances at runtime, saving memory.
+    - Centralizes state for many "virtual" objects into a single location. 
+  - #### Uses and drawbacks
+    - When an application needs to spawn a huge number of similar objects.
+    - When the objects contain duplicate states which can be extracted and shared between multiple objects.
+    - Once you've implemented it, single, logical instances of the class will not be able to behave independently from the other instance.
+
+
 ## Behavioral
 - ### Strategy
   - *Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.*
